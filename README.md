@@ -1,7 +1,7 @@
 ### Step 1: clone repo
 
 ### Step 2: trong thư mục chính của repo, tạo file .env
-
+Ví dụ:  
 MYSQL_USER=zabbix-user  
 MYSQL_DATABASE=zabbixdb  
 MYSQL_PASSWORD=MktLocal@2025!@!  
@@ -14,7 +14,8 @@ USER_ADMIN_ZABBIX=zabbix
 Chờ khoảng 3p để hệ thống boot vào trang login  
 user: Admin/zabbix  
 
-### Step 5: trên docker host, cài đặt zabbix agent 2 ( https://www.zabbix.com/download?zabbix=7.0&os_distribution=centos&os_version=9&components=agent_2&db=&ws= )
+### Step 5: trên docker host, cài đặt zabbix agent 2  
+Link tham khảo : https://www.zabbix.com/download?zabbix=7.0&os_distribution=centos&os_version=9&components=agent_2&db=&ws=
 
 - chỉnh sửa repo epel :  
 vi /etc/yum.repos.d/epel.repo  
