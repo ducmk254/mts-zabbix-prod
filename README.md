@@ -1,6 +1,6 @@
-# Step 1: clone repo
+### Step 1: clone repo
 
-# Step 2: trong thư mục chính của repo, tạo file .env
+### Step 2: trong thư mục chính của repo, tạo file .env
 
 MYSQL_USER=zabbix-user  
 MYSQL_DATABASE=zabbixdb  
@@ -8,13 +8,13 @@ MYSQL_PASSWORD=MktLocal@2025!@!
 MYSQL_ROOT_PASSWORD=MktLocal@2025!@!  
 USER_ADMIN_ZABBIX=zabbix  
 
-# Step 3: docker compose up -d
+### Step 3: docker compose up -d
 
-# Step 4: Truy cập http://docker_host_ip:8087 ( ip 192.168.56.222 )
+### Step 4: Truy cập http://docker_host_ip:8087 ( ip 192.168.56.222 )
 Chờ khoảng 3p để hệ thống boot vào trang login  
 user: Admin/zabbix  
 
-# Step 5: trên docker host, cài đặt zabbix agent 2 ( https://www.zabbix.com/download?zabbix=7.0&os_distribution=centos&os_version=9&components=agent_2&db=&ws= )
+### Step 5: trên docker host, cài đặt zabbix agent 2 ( https://www.zabbix.com/download?zabbix=7.0&os_distribution=centos&os_version=9&components=agent_2&db=&ws= )
 
 - chỉnh sửa repo epel :  
 vi /etc/yum.repos.d/epel.repo  
@@ -28,5 +28,5 @@ dnf install -y zabbix-agent2 zabbix-agent2-plugin-*
 systemctl restart zabbix-agent2  
 systemctl enable zabbix-agent2  
 
-# Step 6: chỉnh sửa host Zabbix server với IP là ip của docker host ( 192.168.56.222)
+### Step 6: chỉnh sửa host Zabbix server với IP là ip của docker host ( 192.168.56.222)
         chỉnh sửa template là Linux by agent active và Zabbix server health  
