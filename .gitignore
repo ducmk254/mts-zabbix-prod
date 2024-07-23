@@ -1,0 +1,11 @@
+.env
+
+../zabbix-data
+../zabbix-logs
+../zabbix-mysql
+../zabbix-nginx
+
+zabbix-data/
+zabbix-logs/
+zabbix-mysql/
+zabbix-nginx/
